@@ -33,4 +33,5 @@ PrivateRoute.propTypes = {
   ]).isRequired
 };
 
+
 export default withRouter(PrivateRoute);

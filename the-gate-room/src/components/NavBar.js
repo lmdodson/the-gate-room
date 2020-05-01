@@ -1,3 +1,4 @@
+//! Dependencies
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +21,9 @@ import {
 
 import { useAuth0 } from "../react-auth0-spa";
 
+//! Define NavBar component 
 const NavBar = () => {
+  // define login variables
   const [isOpen, setIsOpen] = useState(false);
   const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
   const toggle = () => setIsOpen(!isOpen);
@@ -30,6 +33,7 @@ const NavBar = () => {
       returnTo: window.location.origin
     });
 
+    // JSX for HTML elements
   return (
     <div className="nav-container">
       <Navbar color="light" light expand="md">

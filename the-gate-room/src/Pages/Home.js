@@ -5,9 +5,9 @@ import Content from "../components/Content";
 
 const Home = () => (
   <Fragment>
-    <Hero />
+  <Content />
     <hr />
-    <Content />
+    <Hero />
   </Fragment>
 );
 

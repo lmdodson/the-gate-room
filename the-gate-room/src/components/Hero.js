@@ -1,16 +1,13 @@
 import React from "react";
 
-import logo from "../assets/logo.svg";
 
 const Hero = () => (
   <div className="text-center hero my-5">
-    <img className="mb-3 app-logo" src={logo} alt="React logo" width="120" />
-    <h1 className="mb-4">React.js Sample Project</h1>
-
-    <p className="lead">
-      This is a sample application that demonstrates an authentication flow for
-      an SPA, using <a href="https://reactjs.org">React.js</a>
-    </p>
+    <h1 className="mb-4">The Gate Room</h1>
+    <blockquote className="blockquote text-center">
+  <p className="mb-0">Think you've seen it all? Think again. Outside those doors, we might see anything. We could find new worlds, terrifying monsters, impossible things. And if you come with me... nothing will ever be the same again!</p>
+  <footer className="quote-footer">--10th Doctor in <cite title="Source Title">Dr. Who</cite></footer>
+</blockquote>
   </div>
 );
 
