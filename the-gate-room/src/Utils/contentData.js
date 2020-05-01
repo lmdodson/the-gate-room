@@ -1,9 +1,9 @@
 const contentData = [
   {
-    title: "Configure other identity providers",
-    link: "https://auth0.com/docs/connections",
+    title: "New Story",
+    link: "/newstory",
     description:
-      "Auth0 supports social providers as Facebook, Twitter, Instagram and 100+, Enterprise providers as Microsoft Office 365, Google Apps, Azure, and more. You can also use any OAuth2 Authorization Server."
+      "Lorem Ipsum New Story Here."
   },
   {
     title: "Enable Multifactor Authentication",

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +14,7 @@ const Content = () => {
       {!isAuthenticated && (
         <p>Please log in</p>
       )}
-      {isAuthenticated &&
+      {isAuthenticated && (
       <div className="next-steps my-5">
         <h2 className="my-5 text-center">Welcome {user.name}</h2>
         <Row className="d-flex justify-content-between">
@@ -31,7 +31,7 @@ const Content = () => {
           ))}
         </Row>
       </div>
-}
+      )};
       </div>
     );
 }
