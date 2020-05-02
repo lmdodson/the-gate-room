@@ -3,7 +3,9 @@ import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 import episodeData from '../Utils/episodeData';
 
+
 class Content extends Component {
+  
   render() {
     return (
       <div className="Episodes">

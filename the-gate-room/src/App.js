@@ -12,6 +12,9 @@ import Profile from "./Pages/Profile";
 import { useAuth0 } from "./react-auth0-spa";
 import history from "./Utils/history";
 import Room1 from "./components/Room1";
+import Room2 from "./components/Room2";
+import Room3 from "./components/Room3";
+
 
 // styles
 import "./App.css";
@@ -36,7 +39,9 @@ const App = () => {
             <Route path="/" exact component={Home} />
             <PrivateRoute path="/profile" component={Profile} />
             <Route path="/ats" component={Story} />
-            <Route path="/arrival" component={Room1} />
+            <Route path="/room1" component={Room1} />
+            <Route path="/room2" component={Room2} />
+            <Route path="/room3" component={Room3} />
           </Switch>
         </Container>
         <Footer />
