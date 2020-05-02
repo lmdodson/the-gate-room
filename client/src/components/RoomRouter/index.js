@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Room1 from "./Room1";
+import Room1 from "../Room1";
 
 class RoomContainer extends Component {
   state = {

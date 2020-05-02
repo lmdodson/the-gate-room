@@ -19,7 +19,7 @@ import {
   DropdownItem
 } from "reactstrap";
 
-import { useAuth0 } from "../react-auth0-spa";
+import { useAuth0 } from "../../react-auth0-spa";
 
 //! Define NavBar component 
 const NavBar = () => {

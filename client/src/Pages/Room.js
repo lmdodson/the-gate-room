@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth0 } from "../react-auth0-spa";
 
-import Rooms from "../components/Rooms";
+import RoomContainer from "../components/RoomRouter";
 
 const RoomPage = () => {
   const { isAuthenticated } = useAuth0();
@@ -11,7 +11,7 @@ const RoomPage = () => {
       <p>Story content is exclusively for our registered members. Please log in or sign up to get started!</p>
     )}
       {isAuthenticated && (
-  <Rooms />
+  <RoomContainer />
       )}
   </div>
   )

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 
 import { Row, Col } from "reactstrap";
-import episodeData from '../Utils/episodeData';
+import episodeData from '../../Utils/episodeData';
+import "./style.css"
 
 
-class Content extends Component {
+class Episodes extends Component {
   
   render() {
     return (
@@ -25,4 +26,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default Episodes;
