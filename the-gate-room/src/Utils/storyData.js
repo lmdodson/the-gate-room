@@ -1,9 +1,10 @@
-const contentData = [
+const storyData = [
   {
-    title: "New Story",
-    link: "/newstory",
+    title: "Among the Stars",
+    link: "/ats",
     description:
-      "Lorem Ipsum New Story Here."
+      "Lorem Ipsum New Story Here.",
+    id: 0
   },
   {
     title: "Coming Soon",
@@ -22,4 +23,4 @@ const contentData = [
   },
 ];
 
-export default contentData;
+export default storyData;

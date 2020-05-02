@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAuth0 } from "../react-auth0-spa";
 
 
-import contentData from "../Utils/contentData";
+import storyData from "../Utils/storyData";
 
 const Home = () => {
   const { user, isAuthenticated } = useAuth0();
@@ -22,7 +22,7 @@ const Home = () => {
       <div className="next-steps my-5">
         <h2 className="my-5 text-center">Welcome {user.nickname}</h2>
         <Row className="d-flex justify-content-between">
-          {contentData.map((col, i) => (
+          {storyData.map((col, i) => (
             <Col key={i} md={5} className="mb-4">
               <h6 className="mb-3">
                 <a href={col.link}>
