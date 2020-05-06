@@ -21,6 +21,9 @@ import {
 
 import { useAuth0 } from "../../react-auth0-spa";
 
+import "./style.css"
+import door from "../../assets/Door.jpg"
+
 //! Define NavBar component 
 const NavBar = () => {
   // define login variables
@@ -36,9 +39,17 @@ const NavBar = () => {
     // JSX for HTML elements
   return (
     <div className="nav-container">
-      <Navbar color="light" light expand="md">
+      <Navbar color="dark" light expand="md">
         <Container>
-          <NavbarBrand src="../../assets/door.jpg" />
+          <NavbarBrand href="/">
+            <img
+              src={door}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="fancy door" 
+              />
+            </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -58,7 +69,7 @@ const NavBar = () => {
                 <NavItem>
                   <Button
                     id="qsLoginBtn"
-                    color="primary"
+                    color="info"
                     className="btn-margin"
                     onClick={() => loginWithRedirect({})}
                   >
@@ -102,7 +113,7 @@ const NavBar = () => {
                 <NavItem>
                   <Button
                     id="qsLoginBtn"
-                    color="#025fff"
+                    color="#a25fff"
                     block
                     onClick={() => loginWithRedirect({})}
                   >

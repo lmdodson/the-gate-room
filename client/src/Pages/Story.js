@@ -7,12 +7,12 @@ const StoryHome = () => {
   const { isAuthenticated } = useAuth0();
   return (
     <div className="container">
-    {!isAuthenticated && (
+    {/* {!isAuthenticated && (
       <p>Story content is exclusively for our registered members. Please log in or sign up to get started!</p>
     )}
-      {isAuthenticated && (
+      {isAuthenticated && ( */}
   <Episodes />
-      )}
+      {/* )} */}
   </div>
   )
 };

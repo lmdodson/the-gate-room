@@ -8,12 +8,14 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Story from "./Pages/Story";
+import Room from "./Pages/Room";
 import Profile from "./Pages/Profile";
 import { useAuth0 } from "./react-auth0-spa";
 import history from "./Utils/history";
 import Room1 from "./components/Room1";
 import Room2 from "./components/Room2";
 import Room3 from "./components/Room3";
+
 
 
 // styles
@@ -38,10 +40,10 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <PrivateRoute path="/profile" component={Profile} />
-            <Route path="/ats" component={Story} />
-            <Route path="/room1" component={Room1} />
-            <Route path="/room2" component={Room2} />
-            <Route path="/room3" component={Room3} />
+            <PrivateRoute path="/ats" component={Story} />
+            <Route path="/room1" component={Room} />
+            <Route path="/room2" component={Room} />
+            <Route path="/room3" component={Room} />
           </Switch>
         </Container>
         <Footer />

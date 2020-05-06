@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 
+import "./style.css"
 import Room1 from "../Room1";
+import Room2 from "../Room2";
+import Room3 from "../Room3";
 
 class RoomContainer extends Component {
   state = {
-    currentPage: "Room1"
+    currentPage: window.location.href
   };
 
   handlePageChange = page => {

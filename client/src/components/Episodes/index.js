@@ -9,7 +9,7 @@ class Episodes extends Component {
   
   render() {
     return (
-      <div className="Episodes">
+      <div className="container-fluid">
         <h2 className="my-5 text-center">Episode Selection</h2>
         <Row className="d-flex justify-content-between">
           {episodeData.map((col, i) => (
