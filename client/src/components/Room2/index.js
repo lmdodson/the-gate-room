@@ -4,7 +4,7 @@ import { Row, Col } from "reactstrap";
 
 function Room2(props) {
   return (
-    <div>
+    <div className="container-fluid">
       <ul className="nav nav-tabs">
         <li>Location: Room 2</li>
         <li className="nav-item">

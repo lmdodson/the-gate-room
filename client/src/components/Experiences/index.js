@@ -7,7 +7,7 @@ import { useAuth0 } from "../../react-auth0-spa";
 
 const Exp = () => {
   // define login variables
-  const { user} = useAuth0();
+  const {user} = useAuth0();
 
     // JSX for HTML elements
   return (

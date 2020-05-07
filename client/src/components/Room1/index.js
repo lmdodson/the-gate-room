@@ -4,7 +4,7 @@ import "./style.css"
 
 function Room1(props) {
   return (
-    <div>
+    <div className="container-fluid">
       <ul className="nav nav-tabs">
         <li>Location: Room 1</li>
         <li className="nav-item">
