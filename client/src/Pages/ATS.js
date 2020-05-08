@@ -2,7 +2,7 @@ import React from "react";
 
 import Episodes from "../components/Episodes";
 
-const StoryHome = () => {
+const ATS = () => {
   return (
     <div className="container">
   <Episodes />
@@ -10,4 +10,4 @@ const StoryHome = () => {
   )
 };
 
-export default StoryHome;
+export default ATS;

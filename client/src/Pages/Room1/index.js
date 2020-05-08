@@ -1,8 +1,8 @@
 import React from "react";
 
-const Room2 = () => (
+const Room1 = () => (
   <div>
-    <h1>Room2 Page</h1>
+    <h1>Room1 Page</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
       varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
@@ -16,4 +16,4 @@ const Room2 = () => (
   </div>
 );
 
-export default Room2;
+export default Room1;

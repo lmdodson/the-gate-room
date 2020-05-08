@@ -1,7 +1,7 @@
 const storyData = [
   {
     title: "Arrival",
-    link: "/room1",
+    link: "/arrival",
     img: "src/assets/door.jpg",
     description:
       "The first episode.",

@@ -1,31 +1,19 @@
 import React from "react";
-import { Row, Col } from "reactstrap";
 
-
-function Room3(props) {
-  return (
-    <div className="container-fluid">
-      <ul className="nav nav-tabs">
-        <li>Location: Room 3</li>
-        <li className="nav-item">
-          <a href="/Room1" onClick={() => props.handlePageChange("Room1")} className="nav-link">
-            Room 1
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/Room2" onClick={() => props.handlePageChange("Room2")} className="nav-link">
-            Room 2
-          </a>
-        </li>
-      </ul>
-      <hr />
-      <Row className="d-flex justify-content-between">
-            <Col xs="6" sm="4"> 
-              <h1>WELCOME TO ROOM 3</h1>
-            </Col>
-        </Row>
-    </div>
-  );
-}
+const Room3 = () => (
+  <div>
+    <h1>Room3 Page</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
+      varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
+      Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
+      imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
+      in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare elit.
+      Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
+      consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
+      fames ac ante ipsum primis in faucibus.
+    </p>
+  </div>
+);
 
 export default Room3;
