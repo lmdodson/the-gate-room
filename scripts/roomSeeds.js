@@ -11,7 +11,7 @@ mongoose.connect(
 
 const roomSeed = [{
   name: "Hallway",
-  state: false
+  visited: false
 }
 ];
 

@@ -4,14 +4,7 @@ const Room3 = () => (
   <div>
     <h1>Room3 Page</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-      varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-      Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-      imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
-      in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare elit.
-      Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-      consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-      fames ac ante ipsum primis in faucibus.
+    Donec non tincidunt arcu, sit amet vestibulum nunc. Phasellus porta enim mi, vel sollicitudin eros sodales sed. In est purus, pretium interdum condimentum et, mattis a nisi. Maecenas a ullamcorper mauris. Duis vel metus et libero fermentum semper. Vestibulum porttitor est lacinia metus maximus, a dignissim orci scelerisque. In facilisis gravida tortor. Etiam dolor neque, aliquet et mattis vitae, ultricies quis ligula. Quisque dictum dolor nec dui laoreet, ac scelerisque libero posuere. Duis pulvinar non leo in semper. Curabitur commodo tellus mauris, vel luctus nibh interdum vel. Integer sed lorem eros. Integer et augue vel ipsum pellentesque aliquam. Vestibulum ac ex ac quam mollis mollis.
     </p>
   </div>
 );

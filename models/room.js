@@ -1,14 +1,19 @@
 //! Dependencies
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema
 
 // Generate Schema
-const roomSchema = new mongoose.Schema({
+const roomSchema = new Schema({
   name: {
     type: String,
     unique: true,
     trim: true
   },
-  state: false,
+  visited: false,
 });
-var room = mongoose.model("Room", roomSchema);
-module.exports = room;
+
+// Setting schema to variable
+var Room = mongoose.model("Room", roomSchema);
+
+// Exporting
+module.exports = Room;

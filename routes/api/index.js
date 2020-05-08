@@ -1,6 +1,6 @@
 // Dependencies
 const router = require("express").Router();
-const roomsRoutes = require("./roomsRoutes");
+const roomsRoutes = require("./rooms");
 
 // Item routes
 router.use("/rooms", roomsRoutes);
