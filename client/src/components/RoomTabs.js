@@ -1,6 +1,6 @@
 import React from "react";
 
-function RoomTabs(props) {
+const RoomTabs = (props) => {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">

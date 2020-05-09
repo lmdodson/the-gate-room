@@ -1,17 +1,18 @@
 import React from "react";
 
 const Landing = () => (
-  <div>
+  <div className="container-fluid">
     <h1>Landing Page</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-      varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-      Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-      imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
-      in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare elit.
-      Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-      consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-      fames ac ante ipsum primis in faucibus.
+    “Relax and listen to the sound of my voice”
+You shift in the chair, as if the resistance from your mind has trickled down into your body and spread throughout the very fibers of your being. Your eyes twitch, fighting to stay closed. Your ears feel as if they are reaching out, grabbing onto even the softest of sounds from the room: the ticking of the clock on the wall, the scrape of your clothing against the chair as you breathe. She begins to count down.
+“5” You breathe in deeply, trying to feel the air as it fills your lungs and lifts your chest.
+“4” You become aware of your clenched fists as your nail digs deeper into your skin.
+“3” “This will never work” You try to shove the thought from your mind, but it lingers like perfume in the air.
+“2”  Fatigue descends on you like a weight. You feel as if you are caught in the limbo between sleep and wakefulness. The sound of her voice has sweetened and is drawing you into the dark.
+“1” The darkness deepens, and you feel it swallowing you up.
+“Open”
+
     </p>
   </div>
 );

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 import API from "../../Utils/API";
-import "./style.css"
+import Landing from "../Landing";
+import "./style.css";
 
 class Room1 extends Component {
   state = {
@@ -10,7 +11,8 @@ class Room1 extends Component {
   };
 
   componentDidMount() {
-		this.loadItems();
+    this.loadItems();
+    
 	}
 
   loadItems = () => {
@@ -18,7 +20,6 @@ class Room1 extends Component {
 			.then((res) =>
 				this.setState({
 					room: res.data[0].name,
-					visited: true,
 				})
 			)
 			.catch((err) => console.log(err));
@@ -27,7 +28,7 @@ render() {
   return (
   <div className="container-fluid">
     <h1>{this.state.room} Page</h1>
-    {this.state.visted ? ( 
+    {this.state.visited ? ( 
       <p>Visited</p>) :
       (
     <p>
@@ -38,14 +39,6 @@ render() {
       Phasellus placerat enim in ex interdum, a iaculis felis consectetur. Proin ac tellus venenatis, varius mauris sit amet, feugiat ante.    
     </p>
       )}
-              <a
-          href="#landing"
-          onClick={() => this.props.handlePageChange("Landing")}
-          className={this.props.currentPage === "Landing" ? "nav-link active" : "nav-link"}
-        >
-          Landing
-        </a>
-
   </div>
   )
 }
