@@ -1,17 +1,10 @@
 //! Dependencies
-import React, { useState } from "react";
+import React from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
-  Collapse,
   Container,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
   Button,
   UncontrolledDropdown,
   DropdownToggle,
@@ -27,9 +20,7 @@ import door from "../../assets/Door.jpg"
 //! Define NavBar component 
 const NavBar = () => {
   // define login variables
-  const [isOpen, setIsOpen] = useState(false);
   const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
-  const toggle = () => setIsOpen(!isOpen);
 
   const logoutWithRedirect = () =>
     logout({

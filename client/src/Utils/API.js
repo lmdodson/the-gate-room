@@ -10,7 +10,7 @@ export default {
 		return axios.get("/api/items/" + id);
 	},
 	updateItem: function (id, itemData) {
-		return axios.put("/api/items/" + id, itemData);
+		return axios.put("/api/rooms/" + id, itemData);
 	},
 	// Deletes the item with the given id
 	deleteItem: function (id) {

@@ -9,7 +9,7 @@ import Exp from "../components/Experiences";
 const Home = () => {
   // grab authenticated status from Auth0 since this page is not private
   const { isAuthenticated } = useAuth0();
-  const { user } = useAuth0;
+  // const { user } = useAuth0;
     return (
       <div className="container">
         {/* If the user is not authenticated, show about page */}
