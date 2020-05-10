@@ -5,7 +5,7 @@ const Landing = () => (
     <h1>Landing Page</h1>
     <p>
     “Relax and listen to the sound of my voice”
-You shift in the chair, as if the resistance from your mind has trickled down into your body and spread throughout the very fibers of your being. Your eyes twitch, fighting to stay closed. Your ears feel as if they are reaching out, grabbing onto even the softest of sounds from the room: the ticking of the clock on the wall, the scrape of your clothing against the chair as you breathe. She begins to count down.
+You shift in the chair, as if the resistance from your mind has trickled down and spread throughout your body. Your eyes twitch, fighting to stay closed. Your ears feel as if they are reaching out, grabbing onto even the softest of sounds from the room: the ticking of the clock on the wall, the scrape of your clothing against the chair as you breathe. She begins to count down.
 “5” You breathe in deeply, trying to feel the air as it fills your lungs and lifts your chest.
 “4” You become aware of your clenched fists as your nail digs deeper into your skin.
 “3” “This will never work” You try to shove the thought from your mind, but it lingers like perfume in the air.

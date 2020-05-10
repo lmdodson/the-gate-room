@@ -87,11 +87,9 @@ const NavBar = () => {
                 
               )}
               </div>
-            )}
         </Container>
             </div>
+            )}
     
-  );
-};
 
 export default NavBar;
