@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useAuth0 } from "../../react-auth0-spa";
+
 import { Carousel } from 'react-responsive-carousel';
 
 import "./style.css"
  
-class Exps extends Component {
-    render() {
+const Exps = () => {
+  // define login variables
+  const {user} = useAuth0();
+
         return (
+          <container>
+            <div className="instructions">
+              <h2 className="my-5 text-center">Welcome {user.nickname}</h2>
+                <h4 className="my-5 text-center">Select your experience from the options below:</h4>
+                </div>
             <Carousel>
                 <div className="carousel-container">
                     <img src="https://cdn.pixabay.com/photo/2020/04/27/11/03/ranunkeln-5099319_1280.jpg" alt="flower"/>
@@ -21,8 +30,8 @@ class Exps extends Component {
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>
-        );
+          </container>
+        )
     }
-};
 
 export default Exps;
