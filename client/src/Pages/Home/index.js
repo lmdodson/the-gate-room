@@ -6,6 +6,7 @@ import { useAuth0 } from "../../react-auth0-spa";
 // import components
 import About from "../../components/About"
 import Exps from "../../components/Carousel"
+import Exp from "../../components/Experiences"
 
 // import stylesheet
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -25,7 +26,7 @@ const Home = () => {
         {isAuthenticated && (
           <div className="row">
             <div className="stories">
-              <Exps />
+              <Exp />
             </div>
           </div>
         )}
