@@ -19,7 +19,7 @@ const Home = () => {
   // grab authenticated status from Auth0 since this page is not private
   const { isAuthenticated } = useAuth0();
     return (
-      <div id="home" className="d-flex flex-column h-100">
+      <div id="home"className="d-flex flex-column h-100">
         <Navbar />
         {/* <Jumbo /> */}
         {/* If the user is not authenticated, show about page */}

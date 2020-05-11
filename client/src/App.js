@@ -33,7 +33,7 @@ const App = () => {
       <div id="app" className="d-flex flex-column h-100">
         <div className="d-flex flex-column h-100">
           <Switch>
-            <Route path="/" component={Home} />
+            <Route path="/" exact component={Home} />
             <PrivateRoute path="/profile" component={Profile} />
             <PrivateRoute path="/ats" component={ATS} />
             <PrivateRoute path="/arrival" component={Rooms} />
