@@ -1,8 +1,9 @@
-.home-container {
+#home {
   width: 100%;
   /* background: url(https://cdn.pixabay.com/photo/2020/04/18/01/42/portal-5057351_1280.jpg) no-repeat; */
   background-position: center;
   background-size: cover;
+  margin: 0;
 }
 
 .stories {

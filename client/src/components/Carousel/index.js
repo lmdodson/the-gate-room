@@ -12,13 +12,13 @@ const Exps = () => {
   const {user} = useAuth0();
 
         return (
-          <container>
-            <div className="instructions">
+          <div>
+            {/* <div className="instructions">
               <h2 className="my-5 text-center">Welcome {user.nickname}</h2>
                 <h4 className="my-5 text-center">Select your experience from the options below:</h4>
-                </div>
-            <Carousel>
-                <div className="carousel-container">
+                </div> */}
+            <Carousel className="carousel-container">
+                <div>
                     <img src="https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg" alt="swirling stars"/>
                     <Link to="/ats" className="legend">Among the Stars</Link>
                 </div>
@@ -31,7 +31,7 @@ const Exps = () => {
                     <p className="legend">New Stories Coming Soon!</p>
                 </div>
             </Carousel>
-          </container>
+          </div>
         )
     }
 

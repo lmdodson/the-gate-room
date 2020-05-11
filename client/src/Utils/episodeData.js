@@ -9,6 +9,7 @@ const storyData = [
   },
   {
     title: "Second",
+    link: "#",
     img: "src/assets/door.jpg",
     description:
       "The second episode.",
@@ -16,6 +17,7 @@ const storyData = [
   },
   {
     title: "Third",
+    link: "#",
     img: "src/assets/door.jpg",
     description:
       "The third episode.",

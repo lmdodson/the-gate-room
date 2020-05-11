@@ -1,5 +1,7 @@
-.carousel-root{
-  width: 60%;
+.carousel-container{
+  width: 40%;
+  padding: 2em;
+  margin: auto;
 }
 
 h2, h4 {
