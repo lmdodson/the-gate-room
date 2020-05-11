@@ -44,7 +44,7 @@ class Room1 extends Component {
     // if the current room state is visited:true let us know
     this.state.visited ? console.log("good") :
     // if the current room state is visited:false update the db entry to true
-    API.updateItem(this.state.id, {
+    API.updateRoom(this.state.id, {
       visited: true
     })
       }
@@ -52,7 +52,7 @@ class Room1 extends Component {
 // defines the loadItems function
   loadItems = () => {
     // gets the db items
-		API.getItems()
+		API.getRooms()
       .then((res) =>
       // run the select items function and pass the db response
         this.selectItems(res)
@@ -62,13 +62,13 @@ class Room1 extends Component {
   };
 
   // dev tool reset DB function
-  resetData = () => {
-    // if the state visited:true, update db to false
-    this.state.visited ?
-    API.updateItem(this.state.id, {
-      visited: false
-    }) : console.log("good")
-      }
+  // resetData = () => {
+  //   // if the state visited:true, update db to false
+  //   this.state.visited ?
+  //   API.updateRoom(this.state.id, {
+  //     visited: false
+  //   }) : console.log("good")
+  //     }
 
   // define rendered data
 render() {
@@ -91,7 +91,7 @@ render() {
       )
       }
       {/* dev tools reset button */}
-      <button onClick={this.resetData()}>RESET</button>
+      {/* <button onClick={this.resetData()}>RESET</button> */}
   </div>
   )
 }

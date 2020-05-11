@@ -2,22 +2,22 @@ import axios from "axios";
 
 export default {
 	// Gets all items
-	getItems: function () {
+	getRooms: function () {
 		return axios.get("/api/rooms");
 	},
 	// Gets the item with the given id
-	getItem: function (id) {
-		return axios.get("/api/items/" + id);
+	getRoom: function (id) {
+		return axios.get("/api/rooms/" + id);
 	},
-	updateItem: function (id, itemData) {
+	updateRoom: function (id, itemData) {
 		return axios.put("/api/rooms/" + id, itemData);
 	},
 	// Deletes the item with the given id
-	deleteItem: function (id) {
-		return axios.delete("/api/items/" + id);
+	deleteItems: function (id) {
+		return axios.delete("/api/rooms/" + id);
 	},
 	// Saves an item to the database
 	saveItem: function (itemData) {
-		return axios.post("/api/items", itemData);
+		return axios.post("/api/rooms", itemData);
 	},
 };

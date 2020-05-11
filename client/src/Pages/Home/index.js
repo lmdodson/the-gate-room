@@ -26,7 +26,7 @@ const Home = () => {
         {isAuthenticated && (
           <div className="row">
             <div className="stories">
-              <Exp />
+              <Exps />
             </div>
           </div>
         )}
