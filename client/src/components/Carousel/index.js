@@ -18,16 +18,16 @@ const Exps = () => {
                 </div>
             <Carousel>
                 <div className="carousel-container">
-                    <img src="https://cdn.pixabay.com/photo/2020/04/27/11/03/ranunkeln-5099319_1280.jpg" alt="flower"/>
-                    <a href="/ats" className="legend">Legend 1</a>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg" alt="swirling stars"/>
+                    <a href="/ats" className="legend">Among the Stars</a>
                 </div>
                 <div>
                     <img src="https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg" alt="chalkboard coming soon" />
-                    <p className="legend">Legend 2</p>
+                    <p className="legend">New Stories Coming Soon!</p>
                 </div>
                 <div>
                     <img src="https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg" alt="chalkboard coming soon" />
-                    <p className="legend">Legend 3</p>
+                    <p className="legend">New Stories Coming Soon!</p>
                 </div>
             </Carousel>
           </container>

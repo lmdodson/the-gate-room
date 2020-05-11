@@ -6,9 +6,9 @@ import { useAuth0 } from "../../react-auth0-spa";
 // import components
 import About from "../../components/About"
 import Exps from "../../components/Carousel"
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // import stylesheet
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css"
 
 
