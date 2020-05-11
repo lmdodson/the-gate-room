@@ -5,7 +5,7 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 const path = require('path');
-require('dotenv').config()
+require('dotenv').config();
 
 
 //! Middleware 
