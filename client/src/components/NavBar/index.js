@@ -1,6 +1,6 @@
 //! Dependencies
 import React from "react";
-import { NavLink as RouterNavLink } from "react-router-dom";
+import { NavLink as RouterNavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -32,7 +32,7 @@ const NavBar = () => {
     <div className="container">
         <Container>
           {/* Image that links home */}
-          <a href="/">
+          <Link to="/">
             <img
               src={door}
               width="30"
@@ -40,7 +40,7 @@ const NavBar = () => {
               className="d-inline-block align-top"
               alt="fancy door" 
             />
-          </a>
+          </Link>
           {/* render a log in button if user is currently not authenticated */}
             <div className="auth">
               {!isAuthenticated && (

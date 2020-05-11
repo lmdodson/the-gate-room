@@ -19,7 +19,7 @@ const Exps = () => {
             <Carousel>
                 <div className="carousel-container">
                     <img src="https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg" alt="swirling stars"/>
-                    <a href="/ats" className="legend">Among the Stars</a>
+                    <Link to="/ats" className="legend">Among the Stars</Link>
                 </div>
                 <div>
                     <img src="https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg" alt="chalkboard coming soon" />
