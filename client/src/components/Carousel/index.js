@@ -22,11 +22,11 @@ const Exps = () => {
                     <a href="/ats" className="legend">Legend 1</a>
                 </div>
                 <div>
-                    <img src="https://cdn.pixabay.com/photo/2020/03/26/09/01/fog-4969649_1280.jpg" alt="fog" />
+                    <img src="https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg" alt="chalkboard coming soon" />
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/26/02/37/girl-2099359_1280.jpg" alt="girl" />
+                    <img src="https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg" alt="chalkboard coming soon" />
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>
