@@ -25,7 +25,7 @@ app.use(routes);
 
 //! Database connection
 mongoose.connect(
-	process.env.MONGODB_URI || "mongodb://localhost:27017/tgr",
+	process.env.MONGODB_URI,
 	{ useNewUrlParser: true }
 );
 
