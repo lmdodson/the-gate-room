@@ -1,0 +1,22 @@
+.carousel-container{
+  width: 100%;
+  padding: 2em;
+  margin: auto;
+}
+
+.descriptions {
+  padding: 2em;
+}
+
+li.slide.selected {
+  border: white ridge thick
+}
+
+h2, h4 {
+  color: white;
+}
+
+.legend {
+  font-size: 3em;
+}
+
