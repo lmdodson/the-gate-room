@@ -1,46 +1,91 @@
 import React from "react";
 
+
 const RoomTabs = (props) => {
+  if (props.currentPage==="Landing") {
+    return (
+      <ul className="nav nav-tabs">
+        <li className="nav-item">
+          <a
+            href="#room1"
+            onClick={() => props.handlePageChange("Room1")}
+            className={props.currentPage === "Room1" ? "nav-link active" : "nav-link"}
+          >
+            Hallway 
+          </a>
+        </li>
+        </ul>
+  );
+} else if (props.currentPage ==="Room1") {
   return (
     <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#landing"
-          onClick={() => props.handlePageChange("Landing")}
-          className={props.currentPage === "Landing" ? "nav-link active" : "nav-link"}
-        >
-          Landing
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#room1"
-          onClick={() => props.handlePageChange("Room1")}
-          className={props.currentPage === "Room1" ? "nav-link active" : "nav-link"}
-        >
-          Room1
-        </a>
-      </li>
       <li className="nav-item">
         <a
           href="#room2"
           onClick={() => props.handlePageChange("Room2")}
           className={props.currentPage === "Room2" ? "nav-link active" : "nav-link"}
         >
-          Room2
+          Room 2 
         </a>
       </li>
+          <li className="nav-item">
+            <a
+              href="#room3"
+              onClick={() => props.handlePageChange("Room3")}
+              className={props.currentPage === "Room3" ? "nav-link active" : "nav-link"}
+            >
+              Room 3 
+            </a>
+          </li>
+          </ul>
+);
+} else if (props.currentPage === "Room2") {
+  return (
+    <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
-          href="#room3"
-          onClick={() => props.handlePageChange("Room3")}
-          className={props.currentPage === "Room3" ? "nav-link active" : "nav-link"}
+          href="#room1"
+          onClick={() => props.handlePageChange("Room1")}
+          className={props.currentPage === "Room1" ? "nav-link active" : "nav-link"}
         >
-          Room3
+          Hallway
         </a>
       </li>
-    </ul>
-  );
+          <li className="nav-item">
+            <a
+              href="#room3"
+              onClick={() => props.handlePageChange("Room3")}
+              className={props.currentPage === "Room3" ? "nav-link active" : "nav-link"}
+            >
+              Room 3 
+            </a>
+          </li>
+          </ul>
+);
+} else if (props.currentPage === "Room3") {
+  return (
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <a
+          href="#room1"
+          onClick={() => props.handlePageChange("Room1")}
+          className={props.currentPage === "Room1" ? "nav-link active" : "nav-link"}
+        >
+          Hallway 
+        </a>
+      </li>
+          <li className="nav-item">
+            <a
+              href="#room2"
+              onClick={() => props.handlePageChange("Room2")}
+              className={props.currentPage === "Room2" ? "nav-link active" : "nav-link"}
+            >
+              Room 2 
+            </a>
+          </li>
+          </ul>
+);
+}
 }
 
 export default RoomTabs;
