@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import RoomTabs from "./RoomTabs";
-import Landing from "../Pages/Landing";
-import Room1 from "../Pages/Room1";
-import Room2 from "../Pages/Room2";
-import Room3 from "../Pages/Room3";
+import RoomTabs from "../RoomTabs";
+import Landing from "../../Pages/Landing";
+import Room1 from "../../Pages/Room1";
+import Room2 from "../../Pages/Room2";
+import Room3 from "../../Pages/Room3";
 
 class Rooms extends Component {
   state = {
@@ -28,7 +28,7 @@ class Rooms extends Component {
 
   render() {
     return (
-      <div>
+      <div className="story d-flex flex-column h-100">
         <RoomTabs
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}

@@ -5,10 +5,8 @@ import { useAuth0 } from "../../react-auth0-spa";
 
 // import components
 import About from "../../components/About"
-import Exps from "../../components/Carousel"
-import Exp from "../../components/Experiences"
+import Exps from "../../components/Stories"
 import Navbar from "../../components/NavBar"
-import Jumbo from "../../components/Jumbotron"
 
 // import stylesheet
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -19,7 +17,7 @@ const Home = () => {
   // grab authenticated status from Auth0 since this page is not private
   const { isAuthenticated } = useAuth0();
     return (
-      <div id="home"className="d-flex flex-column h-100">
+      <div id="home"className="wrapper d-flex flex-column h-100">
         <Navbar />
         {/* <Jumbo /> */}
         {/* If the user is not authenticated, show about page */}

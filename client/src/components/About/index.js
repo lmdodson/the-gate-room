@@ -1,6 +1,5 @@
 import React from "react";
 
-import Login from "../LoginButton"
 import "./style.css"
 
 const About = () => {
@@ -11,7 +10,6 @@ const About = () => {
     <hr />
     <p>The Gate Room is a collection of interactive literary experiences. Discover worlds, embrace adventure, and unravel mysteries of the universe. 
       Please login or sign up to embark on one of the exclusive adventures located just beyond the gate.</p>
-      <Login />
   </div>
   )
   };
