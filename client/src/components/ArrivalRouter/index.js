@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import RoomTabs from "../RoomTabs";
-import Landing from "../../Pages/Landing";
+import Landing from "../../Pages/Landing/Landing";
 import Room1 from "../../Pages/Room1";
 import Room2 from "../../Pages/Room2";
 import Room3 from "../../Pages/Room3";
