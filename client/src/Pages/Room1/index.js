@@ -8,8 +8,8 @@ class Room1 extends Component {
   // set the intial state for the room
   state = {
     id: 0,
-    name: "",
-    room: "Hallway",
+    name: "Flight Deck",
+    room: "Flight Deck",
     visited: false
   };
 

@@ -111,7 +111,7 @@ const Landing = (props) => {
   <div className="row justify-content-center">
     <div className="col-3 one">
       <Button color="info" className="guide final" href= "#Iskrfkd" onClick={() => props.handlePageChange("Room1")}>
-        "OPEN"
+        OPEN
       </Button>
     </div>
   </div>
