@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "reactstrap"
 
 import API from "../../Utils/API";
 import "./style.css";
@@ -62,13 +63,13 @@ class Room1 extends Component {
   };
 
   // dev tool reset DB function
-  // resetData = () => {
-  //   // if the state visited:true, update db to false
-  //   this.state.visited ?
-  //   API.updateRoom(this.state.id, {
-  //     visited: false
-  //   }) : console.log("good")
-  //     }
+  resetData = () => {
+    // if the state visited:true, update db to false
+    this.state.visited ?
+    API.updateRoom(this.state.id, {
+      visited: false
+    }) : console.log("good")
+      }
 
   // define rendered data
 render() {
@@ -91,7 +92,7 @@ render() {
       )
       }
       {/* dev tools reset button */}
-      {/* <button onClick={this.resetData()}>RESET</button> */}
+      <Button onClick={this.resetData()}>RESET</Button>
   </div>
   )
 }
