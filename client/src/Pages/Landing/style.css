@@ -1,4 +1,46 @@
 .landing-container {
-  font-style: italic;
   color: black;
+  margin: auto 10;
+}
+
+.guide {
+  font-weight: bolder;
+}
+
+.four {
+  text-align: end;
+}
+
+.four-text {
+  padding-left: 2em;
+}
+
+.thought {
+  font-style: italic;
+  text-align: start;
+}
+
+.three {
+  text-align: center;
+}
+
+.three-text {
+  text-align: start;
+}
+
+.two {
+  text-align: end;
+}
+
+.two-text {
+  text-align: start;
+  padding-left: 1em;
+}
+
+.one {
+  text-align: end;
+}
+
+.final {
+  text-align: center;
 }

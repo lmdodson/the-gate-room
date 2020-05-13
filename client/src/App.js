@@ -9,7 +9,7 @@ import ATS from "./Pages/ATS";
 import Profile from "./Pages/Profile";
 import { useAuth0 } from "./react-auth0-spa";
 import history from "./Utils/history";
-import Rooms from "./components/Arrival";
+import Rooms from "./components/ArrivalRouter";
 
 
 // styles

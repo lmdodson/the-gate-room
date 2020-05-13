@@ -5,7 +5,7 @@ import "./style.css"
 
 
 const Footer = () => (
-<div class="footer">
+<div className="footer">
   <p>    
     "Think you've seen it all? Think again. Outside those doors, we might see anything. We could find new worlds, terrifying monsters, impossible things. And if you come with me... nothing will ever be the same again!"
   </p>
