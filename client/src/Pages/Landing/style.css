@@ -1,6 +1,11 @@
 .landing-container {
   color: black;
-  margin: auto 10;
+  margin: auto;
+  background: #747474;
+}
+
+.landing-text {
+  margin: 3em;
 }
 
 .guide {
@@ -21,7 +26,7 @@
 }
 
 .three {
-  text-align: center;
+  text-align: end;
 }
 
 .three-text {

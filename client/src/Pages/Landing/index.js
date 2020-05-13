@@ -2,9 +2,13 @@ import React from "react";
 // import { Row } from "reactstrap"
 import "./style.css"
 
-const Landing = () => (
+import { Button } from "reactstrap"
+
+const Landing = (props) => {
+  return(
 // Intro
-<div className="container landing-container">
+<div className="landing-container h-100">
+  <div className="landing-text">
   <div className="row justify-content-center">
     <div className="col-12">
     <p className="guide">
@@ -19,6 +23,7 @@ const Landing = () => (
       </p>
     </div>
   </div>
+
   {/* 5 */}
   <div className="row justify-content-center">
     <div className="col-1">
@@ -32,6 +37,7 @@ const Landing = () => (
       </p>
     </div>
   </div>
+
   {/* 4 */}
   <div className="row justify-content-center">
     <div className="col-1 four">
@@ -45,37 +51,40 @@ const Landing = () => (
       </p>
     </div>
   </div>
+
   {/* 3 */}
-  <div className="row justify-content-center">
+  <div className="row justify-content-start">
     <div className="col-2 three">
       <p className="guide">
         "3"
       </p>
     </div>
-    <div className="col-3 three-text">
+    <div className="col-2 three-text">
       <p className="thought">
-        “This is ludicrous. It'll never work...”
+        “What were we thinking? This will never work...”
       </p> 
     </div>
-    <div className="col-7 three-text">
+    <div className="col-8 three-text">
       <p>
       You try to shove the thought from your mind, but it lingers like perfume in the air.
       </p>
     </div>
   </div>
+
   {/* 2 */}
-  <div className="row justify-content-center">
-    <div className="col-2 two">
+  <div className="row justify-content-start">
+    <div className="col-3 two">
       <p className="guide">
         "2"
       </p>
     </div>
-    <div className="col-10 two-text">
+    <div className="col-6 two-text">
       <p>
-      Grogginess descends on you like a weight. You feel caught in the limbo between sleep and wakefulness. </p>
-      <p>Her voice has sweetened and is drawing you into the dark.</p>
+      Grogginess descends on you like a weight. You feel caught in the limbo between sleep and wakefulness. Her voice has sweetened and is drawing you into the dark. </p>
+      {/* <p></p> */}
     </div>
   </div>
+
   {/* 1 */}
     <div className="row justify-content-center">
     <div className="col-3 one">
@@ -89,17 +98,28 @@ const Landing = () => (
       </p>
     </div>
   </div>
+  </div>
+
+{/* Drip */}
+  <div className="row justify-content-center">...</div>
+  <div className="row justify-content-center">-</div>
+  <div className="row justify-content-center">.-</div>
+  <div className="row justify-content-center">.-.</div>
+  <div className="row justify-content-center">...</div>
+
+{/* OPEN */}
   <div className="row justify-content-center">
     <div className="col-3 one">
-      <p className="guide final">
+      <Button color="info" className="guide final" href= "#Iskrfkd" onClick={() => props.handlePageChange("Room1")}>
         "OPEN"
-      </p>
+      </Button>
     </div>
   </div>
 
 
 
 </div>
-);
+  )
+};
 
 export default Landing;
