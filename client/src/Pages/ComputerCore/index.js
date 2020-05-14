@@ -4,12 +4,12 @@ import { Button } from "reactstrap"
 import API from "../../Utils/API";
 import "./style.css";
 
-class Room2 extends Component {
+class Comp extends Component {
   // set the intial state for the room
   state = {
     id: 0,
-    name: "Room 2",
-    room: "Room 2",
+    name: "ComputerCore",
+    room: "ComputerCore",
     visited: false
   };
 
@@ -99,4 +99,4 @@ render() {
 }
 
 // export the component
-export default Room2;
+export default Comp;

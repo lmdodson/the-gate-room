@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 // import RoomTabs from "../RoomTabs";
-import Landing from "../../Pages/Landing";
+import Intro from "../../Pages/Intro";
 import FlightDeck from "../../Pages/FlightDeck";
-import Room2 from "../../Pages/Room2";
-import Room3 from "../../Pages/Room3";
+import Comp from "../../Pages/ComputerCore";
+import LifeSupport from "../../Pages/LifeSupport";
 
 
 class Rooms extends Component {
   state = {
-    currentPage: "Landing"
+    currentPage: "Intro"
   };
 
   handlePageChange = page => {
@@ -16,8 +16,8 @@ class Rooms extends Component {
   };
 
   render() {
-    if (this.state.currentPage === "Landing") {
-      return <Landing 
+    if (this.state.currentPage === "Intro") {
+      return <Intro
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
       />
@@ -26,13 +26,28 @@ class Rooms extends Component {
         currentPage={this.state.currentPage}
         handlePageChange={this.handlePageChange}
       />
-    } else if (this.state.currentPage === "Room2") {
-      return <Room2 
+    } else if (this.state.currentPage === "ComputerCore") {
+      return <Comp
         currentPage={this.state.currentPage}
         handlePageChange={this.handlePageChange}
       />
-    } else if (this.state.currentPage === "Room3") {
-      return <Room3 
+    } else if (this.state.currentPage === "Corridor") {
+      return <Corridor
+        currentPage={this.state.currentPage}
+        handlePageChange={this.handlePageChange}
+      />
+    } else if (this.state.currentPage === "LifeSupport") {
+      return <LifeSuport
+        currentPage={this.state.currentPage}
+        handlePageChange={this.handlePageChange}
+      />
+    } else if (this.state.currentPage === "Cabin") {
+      return <Cabin
+        currentPage={this.state.currentPage}
+        handlePageChange={this.handlePageChange}
+      />
+    } else if (this.state.currentPage === "Elevator") {
+      return <Elevator
         currentPage={this.state.currentPage}
         handlePageChange={this.handlePageChange}
       />

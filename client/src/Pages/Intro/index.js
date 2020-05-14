@@ -4,11 +4,11 @@ import "./style.css"
 
 import { Button, Row, Col, Container } from "reactstrap"
 
-const Landing = (props) => {
+const Intro = (props) => {
   return(
 // Intro
-<div className="d-flex flex-column h-100 landing-container">
-  <Container className="d-flex flex-column h-100 landing-text">
+<div className="d-flex flex-column h-100 intro-container">
+  <Container className="d-flex flex-column h-100 intro-text">
     <div>
       <Row>
         <Col md="auto">
@@ -141,4 +141,4 @@ const Landing = (props) => {
   )
 };
 
-export default Landing;
+export default Intro;

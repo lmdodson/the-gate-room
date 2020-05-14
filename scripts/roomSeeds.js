@@ -12,20 +12,20 @@ mongoose.connect(
 
 const roomSeed = [
 	{
-  name: "Hallway",
+  name: "Corridor",
   visited: false
 }, {
 	name: "FlightDeck",
 	visited: false,
 	doorCode: 1701
 }, {
-	name: "Room2",
-	visited: false
-}, {
-	name: "Room3",
+	name: "ComputerCore",
 	visited: false
 }, {
 	name: "Elevator",
+	visited: false
+}, {
+	name: "LifeSupport",
 	visited: false
 }
 
