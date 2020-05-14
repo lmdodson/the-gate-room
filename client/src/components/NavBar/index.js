@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Portal from "../../assets/Portal.svg"
+import Portal from "../../assets/portal.png"
 
 import {
   Collapse,

@@ -1,6 +1,5 @@
 .landing-container {
   color: black;
-  margin: auto;
   background: #747474;
 }
 
@@ -12,40 +11,7 @@
   font-weight: bolder;
 }
 
-.four {
-  text-align: end;
-}
-
-.four-text {
-  padding-left: 2em;
-}
 
 .thought {
   font-style: italic;
-  text-align: start;
-}
-
-.three {
-  text-align: end;
-}
-
-.three-text {
-  text-align: start;
-}
-
-.two {
-  text-align: end;
-}
-
-.two-text {
-  text-align: start;
-  padding-left: 1em;
-}
-
-.one {
-  text-align: end;
-}
-
-.final {
-  text-align: center;
 }
