@@ -4,12 +4,13 @@ import { Button } from "reactstrap"
 import API from "../../Utils/API";
 import "./style.css";
 
-class Room1 extends Component {
+class FlightDeck extends Component {
   // set the intial state for the room
   state = {
     id: 0,
-    name: "Flight Deck",
-    room: "Flight Deck",
+    name: "FlightDeck",
+    room: "FlightDeck",
+    backgroundColor: "Black",
     visited: false
   };
 
@@ -62,6 +63,7 @@ class Room1 extends Component {
       
   };
 
+
   // dev tool reset DB function
   resetData = () => {
     // if the state visited:true, update db to false
@@ -74,7 +76,7 @@ class Room1 extends Component {
   // define rendered data
 render() {
   return (
-  <div className="container-fluid">
+  <div className="d-flex flex-column h-100">
     {/* set h1 data to state.name */}
     <h1>{this.state.name} Page</h1>
     {/* If state.visit:true, displays the following */}
@@ -83,11 +85,7 @@ render() {
       ) : (
         // if state.visit:false, displays the following
     <p>
-      Ut id enim id ligula commodo eleifend non ac quam. Nulla aliquam lectus urna, a fermentum enim fringilla ac. 
-      Vivamus tellus est, iaculis sed vehicula quis, hendrerit sed diam. Duis ullamcorper magna eget imperdiet facilisis. 
-      Phasellus eu sapien egestas urna fringilla varius. Nullam euismod ex egestas convallis dapibus. Phasellus sed libero at felis vehicula semper in eget odio. 
-      Donec egestas dictum quam, quis lacinia erat volutpat vitae. In non diam nec leo vehicula imperdiet non eget mi. Quisque sit amet posuere urna. 
-      Phasellus placerat enim in ex interdum, a iaculis felis consectetur. Proin ac tellus venenatis, varius mauris sit amet, feugiat ante.    
+      Still Open
     </p>
       )
       }
@@ -99,4 +97,4 @@ render() {
 }
 
 // export the component
-export default Room1;
+export default FlightDeck;

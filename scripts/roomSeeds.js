@@ -6,14 +6,29 @@ require('dotenv').config();
 
 
 mongoose.connect(
-	process.env.MONGODB_URI ||  "mongodb://localhost:27017/tgr",
+	process.env.MONGODB_URI,
 	{ useNewUrlParser: true }
 );
 
-const roomSeed = [{
+const roomSeed = [
+	{
   name: "Hallway",
   visited: false
+}, {
+	name: "FlightDeck",
+	visited: false,
+	doorCode: 1701
+}, {
+	name: "Room2",
+	visited: false
+}, {
+	name: "Room3",
+	visited: false
+}, {
+	name: "Elevator",
+	visited: false
 }
+
 ];
 
 db.Room.remove({})
