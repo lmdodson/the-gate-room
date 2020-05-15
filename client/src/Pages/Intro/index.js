@@ -12,7 +12,6 @@ const Intro = (props) => {
 <div className="d-flex flex-column h-100 intro-container">
 
 <Timeout />
-{/* OPEN */}
   <Row className="justify-content-center">
     <div className="col-3 one justify-content-center">
       <Button color="info" className="open-btn" href= "#Iskrfkd" onClick={() => props.handlePageChange("Elevator")}>
@@ -26,6 +25,7 @@ const Intro = (props) => {
       </Button>
     </div>
   </Row>
+{/* OPEN */}
   </div>
   )
 };

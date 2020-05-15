@@ -4,12 +4,6 @@
   background-size: cover;
 }
 
-.intro-text {
-  margin: auto;
-  background: black;
-  border: ridge tan thick;
-}
-
 .guide {
   font-weight: bolder;
 }

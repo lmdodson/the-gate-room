@@ -7,13 +7,16 @@ import { Button, Row, Col, Container } from "reactstrap"
 const Corridor = (props) => {
   return(
 // Intro
+    <Container className="container-fluid">
   <Row className="justify-content-center">
     <div className="col-3 one justify-content-center">
+      
       <Button color="info" className="open-btn" href= "#Iskrfkd" onClick={() => props.handlePageChange("FlightDeck")}>
         FlightDeck
       </Button>
     </div>
   </Row>
+  </Container>
 
 
   )
