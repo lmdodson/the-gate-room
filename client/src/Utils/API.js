@@ -11,7 +11,8 @@ export default {
 	},
 	// Gets the Room with the given id
 	getRoom: function (name) {
-		return axios.get("/api/rooms/" + name);
+		console.log(name)
+		return axios.get("/api/rooms/find-room/" + name);
 	},
 	updateRoom: function (id, roomData) {
 		return axios.put("/api/rooms/" + id, roomData);

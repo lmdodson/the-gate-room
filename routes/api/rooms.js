@@ -14,8 +14,9 @@ router.route("/:id")
 	.delete(roomsController.remove);
 
 	// Matches with "/api/rooms/:name"
-router.route("/:name")
+router.route("/find-room/:name")
 	.get(roomsController.find)
+	// .get(console.log("HERE WE ARE, GOT THIS FAR!"))
 
 // Exporting
 module.exports = router;

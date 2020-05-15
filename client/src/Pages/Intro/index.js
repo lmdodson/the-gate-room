@@ -3,31 +3,24 @@ import React from "react";
 import "./style.css"
 import Timeout from "../../components/Timeout"
 
-import { Button, Row, Col, Container } from "reactstrap"
+import { Button, Row } from "reactstrap"
 
 const Intro = (props) => {
-
-  return(
+return(
 // Intro
 <div className="d-flex flex-column h-100 intro-container">
-
-<Timeout />
-  <Row className="justify-content-center">
-    <div className="col-3 one justify-content-center">
-      <Button color="info" className="open-btn" href= "#Iskrfkd" onClick={() => props.handlePageChange("Elevator")}>
-        Elevator
-      </Button>
-      <Button color="info" className="open-btn" href= "#Iskrfkd" onClick={() => props.handlePageChange("Corridor")}>
-        Corridor
-      </Button>
-      <Button color="info" className="open-btn" href= "#Iskrfkd" onClick={() => props.loadRooms()}>
-        Happy
-      </Button>
-    </div>
-  </Row>
-{/* OPEN */}
-  </div>
-  )
+  {/* Pull in Timeout component */}
+  <Timeout />
+    <Row className="justify-content-center">
+      <div className="col-3 one justify-content-center">
+        {/* Nav Button */}
+        <Button color="danger" className="nav-btn" href= "#Intro" onClick={() => props.handlePageChange("ComputerCore")}>
+          Flight Deck
+        </Button>
+      </div>
+    </Row>
+</div>
+)
 };
 
 export default Intro;

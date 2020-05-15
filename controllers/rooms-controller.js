@@ -10,7 +10,8 @@ module.exports = {
 			.catch((err) => res.json(err));
 	},
 	find: function(req, res) {
-		db.Room.find({ name: req.params.name })
+		console.log("HERE I AM" + req.params.name)
+		db.Room.findOne({ name: req.params.name })
 		.then((dbModel) => res.json(dbModel))
 		.catch((err) => res.json(err));
 	},

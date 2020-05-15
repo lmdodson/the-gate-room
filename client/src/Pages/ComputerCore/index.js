@@ -15,61 +15,19 @@ class Comp extends Component {
 
   // when the component loads, run the loadItems function
   componentDidMount() {
-    this.loadItems();
+    this.loadRoom();
   }
-  
-  // when leaving the page and component unmounts, run the update items function
-  componentWillUnmount() {
-    this.updateItems();
-  }
-
-  // defines selectItems function
-  selectItems(res) {
-    console.log(res.data)
-    // loop through the db data
-    for (var i=0; i<res.data.length; i++) {
-      // when the loop hits a match for the current room
-      if (res.data[i].name === this.state.room) {
-        // update the room state with corresponding db results
-        this.setState({
-          id: res.data[i]._id,
-          name: res.data[i].name,
-          visited: res.data[i].visited
-        })
-      }
-    }
-  }
-
-  // defines updateItems function
-  updateItems = () => {
-    // if the current room state is visited:true let us know
-    this.state.visited ? console.log("good") :
-    // if the current room state is visited:false update the db entry to true
-    API.updateRoom(this.state.id, {
-      visited: true
-    })
-      }
-  
-// defines the loadItems function
-  loadItems = () => {
+    
+// function to pull the room data from db 
+  loadRoom = () => {
     // gets the db items
-		API.getRooms()
+		API.getRoom("ComputerCore")
       .then((res) =>
       // run the select items function and pass the db response
-        this.selectItems(res)
+        console.log(res)
       )
       .catch((err) => console.log(err));
-      
   };
-
-  // dev tool reset DB function
-  resetData = () => {
-    // if the state visited:true, update db to false
-    this.state.visited ?
-    API.updateRoom(this.state.id, {
-      visited: false
-    }) : console.log("good")
-      }
 
   // define rendered data
 render() {
@@ -92,7 +50,7 @@ render() {
       )
       }
       {/* dev tools reset button */}
-      <Button onClick={this.resetData()}>RESET</Button>
+      {/* <Button onClick={this.resetData()}>RESET</Button> */}
   </div>
   )
 }

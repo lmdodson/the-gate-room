@@ -9,6 +9,7 @@ const roomSchema = new Schema({
     unique: true,
   },
   visited: false,
+  power: false,
 });
 
 // Setting schema to variable
