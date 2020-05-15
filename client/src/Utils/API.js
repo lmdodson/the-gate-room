@@ -14,6 +14,7 @@ export default {
 		console.log(name)
 		return axios.get("/api/rooms/find-room/" + name);
 	},
+	// Updates the Room with the given id
 	updateRoom: function (id, roomData) {
 		return axios.put("/api/rooms/" + id, roomData);
 	},
@@ -25,4 +26,29 @@ export default {
 	saveRoom: function (roomData) {
 		return axios.post("/api/rooms", roomData);
 	},
+		// Gets all Items
+		getItems: function () {
+			return axios.get("/api/items");
+		},
+		// Gets the item with the given id
+		getItemID: function (id) {
+			return axios.get("/api/items/" + id);
+		},
+		// Gets the Room with the given id
+		getItem: function (name) {
+			console.log(name)
+			return axios.get("/api/items/reveal/" + name);
+		},
+		// Updates Item with the given id
+		updateItem: function (id, itemData) {
+			return axios.put("/api/items/" + id, itemData);
+		},
+		// Deletes the Item with the given id
+		deleteItems: function (id) {
+			return axios.delete("/api/items/" + id);
+		},
+		// Saves an Item to the database
+		saveItem: function (itemData) {
+			return axios.post("/api/items", itemData);
+		},
 };

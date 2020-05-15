@@ -16,7 +16,6 @@ router.route("/:id")
 	// Matches with "/api/rooms/:name"
 router.route("/find-room/:name")
 	.get(roomsController.find)
-	// .get(console.log("HERE WE ARE, GOT THIS FAR!"))
 
 // Exporting
 module.exports = router;
