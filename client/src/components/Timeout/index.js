@@ -22,8 +22,9 @@ class Timeout extends Component {
       // <div style={{ backgroundColor: (this.state.on ? 'yellow' : 'gray') }}>
 // Intro
   return (
-    <Container className="d-flex flex-column h-100 intro-text">
+  <Container className="d-flex flex-column intro-text">
     <div>
+      {/* Start */}
       <Row>
         <Col md="auto">
           <p className="guide">
@@ -133,6 +134,7 @@ class Timeout extends Component {
     </div>
   </div>
 
+{/* Open */}
   <div>
     <Row className="justify-content-center">...</Row>
     <Row className="justify-content-center">-</Row>

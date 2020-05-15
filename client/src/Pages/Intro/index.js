@@ -10,6 +10,7 @@ const Intro = (props) => {
   return(
 // Intro
 <div className="d-flex flex-column h-100 intro-container">
+
 <Timeout />
 {/* OPEN */}
   <Row className="justify-content-center">
