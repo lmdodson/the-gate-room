@@ -7,7 +7,6 @@ const roomSchema = new Schema({
   name: {
     type: String,
     unique: true,
-    trim: true
   },
   visited: false,
 });

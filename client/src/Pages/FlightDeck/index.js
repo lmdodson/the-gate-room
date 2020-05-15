@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import { Button } from "reactstrap"
 
+import Rooms from "../../components/RoomRouter"
 import API from "../../Utils/API";
 import "./style.css";
 
-class FlightDeck extends Component {
+class Comp extends Component {
   // set the intial state for the room
-  state = {
-    id: 0,
-    name: "FlightDeck",
-    room: "FlightDeck",
-    backgroundColor: "Black",
-    visited: false
-  };
+  // state = {
+  //   id: "5ebce79ca113aa25b40abe49",
+  //   name: "FlightDeck",
+  //   room: "FlightDeck",
+  //   visited: false
+  // };
 
   // when the component loads, run the loadItems function
   componentDidMount() {
-    this.loadItems();
+    this.loadRoom();
   }
   
   // when leaving the page and component unmounts, run the update items function
@@ -63,6 +63,11 @@ class FlightDeck extends Component {
       
   };
 
+  loadRoom = () => {
+    API.getRoom(this.state.name)
+    .then((res) =>
+    console.log(res.data))
+  }
 
   // dev tool reset DB function
   resetData = () => {
@@ -76,7 +81,7 @@ class FlightDeck extends Component {
   // define rendered data
 render() {
   return (
-  <div className="d-flex flex-column h-100">
+  <div className="container-fluid">
     {/* set h1 data to state.name */}
     <h1>{this.state.name} Page</h1>
     {/* If state.visit:true, displays the following */}
@@ -85,16 +90,24 @@ render() {
       ) : (
         // if state.visit:false, displays the following
     <p>
-      Still Open
+      Ut id enim id ligula commodo eleifend non ac quam. Nulla aliquam lectus urna, a fermentum enim fringilla ac. 
+      Vivamus tellus est, iaculis sed vehicula quis, hendrerit sed diam. Duis ullamcorper magna eget imperdiet facilisis. 
+      Phasellus eu sapien egestas urna fringilla varius. Nullam euismod ex egestas convallis dapibus. Phasellus sed libero at felis vehicula semper in eget odio. 
+      Donec egestas dictum quam, quis lacinia erat volutpat vitae. In non diam nec leo vehicula imperdiet non eget mi. Quisque sit amet posuere urna. 
+      Phasellus placerat enim in ex interdum, a iaculis felis consectetur. Proin ac tellus venenatis, varius mauris sit amet, feugiat ante.    
     </p>
       )
       }
       {/* dev tools reset button */}
       <Button onClick={this.resetData()}>RESET</Button>
+            <Button color="info" className="open-btn" href= "#Iskrfkd" onClick={(props) => props.handlePageChange("FlightDeck")}>
+        OPEN
+      </Button>
+
   </div>
   )
 }
 }
 
 // export the component
-export default FlightDeck;
+export default Comp;

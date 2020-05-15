@@ -9,6 +9,11 @@ module.exports = {
 			.then((dbModel) => res.json(dbModel))
 			.catch((err) => res.json(err));
 	},
+	find: function(req, res) {
+		db.Room.find({ name: req.params.name })
+		.then((dbModel) => res.json(dbModel))
+		.catch((err) => res.json(err));
+	},
 	findById: function (req, res) {
 		db.Room.find({ _id: req.params.id })
 			.then((dbModel) => res.json(dbModel))
