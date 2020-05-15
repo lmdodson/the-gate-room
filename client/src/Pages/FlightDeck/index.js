@@ -1,23 +1,36 @@
-import React from "react";
-// import { Row } from "reactstrap"
-import "./style.css"
+import React, { Component } from "react";
+import API from "../../Utils/API";
+import { Link } from "react-router-dom";
 
-import { Button, Row } from "reactstrap"
 
-const Intro = (props) => {
-return(
-// Intro
-<div className="d-flex flex-column h-100 intro-container">
-    <Row className="justify-content-center">
-      <div className="col-3 one justify-content-center">
-        {/* Nav Button */}
-        <Button color="danger" className="nav-btn" href= "#FlightDeck" onClick={() => props.handlePageChange("Corridor")}>
-          Corridor
-        </Button>
-      </div>
-    </Row>
-</div>
-)
+
+class FlightDeck extends Component {
+  state = {
+    currentPage: "FlightDeck",
+    power: false,
+    visited: false
+  };
+
+
+// get DB data
+loadRoom = () => {
+  // gets the db items
+  API.getRoom(this.state.currentPage)
+    .then((res) =>
+    // update the state based on db values
+      console.log(res)
+    )
+    .catch((err) => console.log(err));
 };
 
-export default Intro;
+  render() {
+    return(
+      <div>
+        <h1>{this.state.currentPage}</h1> 
+      <Link to='/corridor'>Corridor</Link>
+      </div>
+      )
+  }
+}
+
+export default FlightDeck;

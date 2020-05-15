@@ -1,25 +1,40 @@
-import React from "react";
-// import { Row } from "reactstrap"
-import "./style.css"
-
-import { Button, Row, Col, Container } from "reactstrap"
-
-const Corridor = (props) => {
-  return(
-// Intro
-    <Container className="container-fluid">
-  <Row className="justify-content-center">
-    <div className="col-3 one justify-content-center">
-      
-      <Button color="info" className="open-btn" href= "#Iskrfkd" onClick={() => props.handlePageChange("FlightDeck")}>
-        FlightDeck
-      </Button>
-    </div>
-  </Row>
-  </Container>
+import React, { Component } from "react";
+import API from "../../Utils/API";
+import { Link } from "react-router-dom";
 
 
-  )
+
+class Corridor extends Component {
+  state = {
+    currentPage: "Corridor",
+    power: false,
+    visited: false
+  };
+
+
+// get DB data
+loadRoom = () => {
+  // gets the db items
+  API.getRoom(this.state.currentPage)
+    .then((res) =>
+    // update the state based on db values
+      console.log(res)
+    )
+    .catch((err) => console.log(err));
 };
+
+  render() {
+    return(
+      <div>
+        <h1>{this.state.currentPage}</h1> 
+      <Link to='/flightdeck'>Flight Deck</Link>
+      <Link to='/cabin'>Cabin</Link>
+      <Link to='/lifesupport'>Life Support</Link>
+      <Link to='/computercore'>Computer Core</Link>
+      <Link to='/elevator'>Elevator</Link>
+      </div>
+      )
+  }
+}
 
 export default Corridor;

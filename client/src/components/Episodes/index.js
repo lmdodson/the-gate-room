@@ -23,7 +23,7 @@ const Episodes = () => {
           <Carousel className='carousel-container'>
             <div>
               <img src='https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg' alt='swirling stars'/>
-                <Link to='/arrival' className='legend'>Arrival</Link>
+                <Link to='/intro' className='legend'>Arrival</Link>
             </div>
             <div>
               <img src='https://cdn.pixabay.com/photo/2019/02/21/05/02/lock-4010669_1280.jpg' alt='lock with key' />
