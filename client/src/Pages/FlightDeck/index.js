@@ -22,15 +22,23 @@ class FlightDeck extends Component {
     passed: false
   };
 
+  // on mount
 componentDidMount = () => {
   this.loadRoom();
-  // console.log(this.state)
 }
 
-// componentWillUnmount = () => {
-//   this.loadRoom();
-//   // console.log(this.state)
-// }
+// on unmount
+componentWillUnmount() {
+  this.updateRoom();
+}
+
+// update db
+updateRoom = () => {
+  this.state.visited ? console.log("good") :
+  API.updateRoom(this.state.id, {
+    visited: true
+  })
+}
 
 
 // get DB data
