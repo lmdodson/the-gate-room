@@ -1,53 +1,68 @@
 import React, { Component } from "react";
 import API from "../../Utils/API";
 import { Link } from "react-router-dom";
+import { Row, Container } from "reactstrap";
+import Content from "../../components/FDcontent";
+import FDcard from "../../components/FDcard";
+import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
 
+
+import "./style.css";
 
 
 class FlightDeck extends Component {
   state = {
-    id: 0,
     currentPage: "FlightDeck",
-    light: false,
     power: false,
-    visited: false
+    visited: false,
+    on: false
   };
 
-  componentDidMount = () => {
-    this.loadRoom();
-  }
-
-roomStats = (data) => {
-    this.setState({ power: data.power });
-    this.setState({visited: data.visited})
-};
+componentDidMount = () => {
+  this.loadRoom();
+}
 
 // get DB data
 loadRoom = () => {
   // gets the db items
-  API.getRoom("FlightDeck")
+  API.getRoom(this.state.currentPage)
     .then((res) =>
-    this.roomStats(res)
-    // run the select items function and pass the db response
+    // update the state based on db values
+      console.log(res)
     )
     .catch((err) => console.log(err));
 };
 
+handleClick = (e) => {
+  this.setState({ on: !this.state.on })
+}
+
 
   render() {
     return(
-    this.state.light ? 
-      <div>
-        <h1>{this.state.currentPage}</h1> 
-      <Link to='/corridor'>Corridor</Link>
+      <div style={{ background: (this.state.on ? 'url(https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg)'
+        : 'black') }} className='d-lg-flex fd-container h-100 justify-content-center'>
+  <div>
+    <Row className="justify-content-center">
+      <FDcard />
+    </Row>
+    <Row className="justify-content-center">
+      <WbIncandescentIcon className="hvr-radial-out" onClick={this.handleClick}></WbIncandescentIcon>
+    </Row>
+    <Row className="justify-content-center">*</Row>
+    <Row className="justify-content-center">*******</Row>
+    <Row className="justify-content-center">0</Row>
+    <Row className="justify-content-center">*</Row>
+    <Row>
+    <Container style={{ color: (this.state.on ? 'white' : 'black') }}>
+      <Content />
+    </Container>
+    </Row>
+
+  </div>
       </div>
-      :
-      <div> THIS ROOM IS DARK</div>
       )
-  
-
   }
-
 }
 
 export default FlightDeck;

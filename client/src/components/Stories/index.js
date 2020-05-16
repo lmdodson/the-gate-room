@@ -37,7 +37,7 @@ const Exps = (props) => {
           <Carousel className="carousel-container">
             <div>
               <img src="https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg" alt="swirling stars"/>
-              <Button color='danger' className={className} onClick={toggle}>{buttonLabel}</Button>
+              <Button color='info' className={className} onClick={toggle}>{buttonLabel}</Button>
             </div>
               <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>Among The Stars</ModalHeader>

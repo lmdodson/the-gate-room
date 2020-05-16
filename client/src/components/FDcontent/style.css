@@ -1,0 +1,16 @@
+.fade-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.content-container {
+  position: relative;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 0;
+  border: double black;
+  background: black;
+}

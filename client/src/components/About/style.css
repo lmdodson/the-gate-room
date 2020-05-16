@@ -1,24 +1,26 @@
-/* .container-fluid {
+.container-fluid {
   border: black solid;
-  margin-top: 5%;
+  margin-top: 15%;
   background: #000000;
   color: white;
-} */
-
-/* 
-body, html {
-  height: 100%;
-  min-height: 100%;
 }
 
-body {
-  background: -webkit-linear-gradient(top, #000000 0%, rgb(27, 27, 27) 40%);
-  background: linear-gradient(to bottom, #000000 0%, rgb(27, 27, 27) 40%);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: perspective(800px);
-          transform: perspective(800px);
-} */
+.alert-shown {
+  opacity: 1;
+  transition: all 250ms linear;
+}
+
+.alert-hidden {
+  opacity: 0;
+  transition: all 250ms linear;
+}
+
+.text {
+  color: white;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
 
 .poster {
   width: 500px;
@@ -28,7 +30,7 @@ body {
   left: 50%;
   margin: -250px 0 0 -250px;
   border-radius: 5px;
-  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 45px 100px rgba(184, 182, 182, 0.4);
   overflow: hidden;
 }
 

@@ -81,6 +81,7 @@ export default function VerticalTabs() {
         <Tab label="Computer Core" {...a11yProps(1)} />
         <Tab label="Elevator" {...a11yProps(2)} />
         <Tab label="" {...a11yProps(3)} />
+        <Tab label="Flight Deck" {...a11yProps(4)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <div className="nav-text">
@@ -134,6 +135,19 @@ export default function VerticalTabs() {
           </Button>
         </div>
       </TabPanel>
+      <TabPanel value={value} index={4}>
+        <div className="nav-text">
+          <p>
+           Are you sure you wish to return?
+          </p>
+        </div>
+        <div>
+          <Button className="danger">    
+            <Link to="/flightdeck"> Enter </Link>
+          </Button>
+        </div>
+      </TabPanel>
+
     </div>
     </div>
   );

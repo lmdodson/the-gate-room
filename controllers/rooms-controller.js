@@ -11,7 +11,7 @@ module.exports = {
 	},
 	find: function(req, res) {
 		console.log("HERE I AM" + req.params.name)
-		db.Room.findOne({ name: req.params.name })
+		db.Room.find({ name: req.params.name })
 		.then((dbModel) => res.json(dbModel))
 		.catch((err) => res.json(err));
 	},

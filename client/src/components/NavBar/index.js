@@ -41,8 +41,8 @@ const NavBar = () => {
               <Link to="/">
                 <img
                     src={ Portal }
-                    width="80"
-                    height="80"
+                    width="240"
+                    height="96"
                     className="d-inline-block align-top"
                     alt="blue portal" 
                 />
