@@ -26,21 +26,6 @@ class FlightDeck extends Component {
 componentDidMount = () => {
   this.loadRoom();
 }
-
-// on unmount
-componentWillUnmount() {
-  this.updateRoom();
-}
-
-// update db
-updateRoom = () => {
-  this.state.visited ? console.log("good") :
-  API.updateRoom(this.state.id, {
-    visited: true
-  })
-}
-
-
 // get DB data
 loadRoom = () => {
   // gets the db items
@@ -56,6 +41,21 @@ loadRoom = () => {
     )
     .catch((err) => console.log(err));
 };
+
+// on unmount
+componentWillUnmount() {
+  this.updateRoom();
+}
+
+// update db
+updateRoom = () => {
+  this.state.visited ? console.log("good") :
+  API.updateRoom(this.state.id, {
+    visited: true
+  })
+}
+
+
 
 handleClick = (e) => {
   this.setState({ on: !this.state.on })
@@ -79,11 +79,8 @@ handleFormSubmit = event => {
   }
 };
 
-
-
-
-
   render() {
+    if (this.state.visited==false) {
     return(
       <div style={{ background: (this.state.on ? 'url(https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg)'
         : 'black') }} className='d-lg-flex fd-container h-100 justify-content-center'>
@@ -119,6 +116,14 @@ handleFormSubmit = event => {
   </div>
       </div>
       )
+    } else {
+      return (
+        <div>
+          <div>You've been here before. Maybe this journey is affecting your sanity.</div>
+          <Link to="/corridor" className="nav-button">CORRIDOR</Link>
+        </div>
+      )
+    }
   }
 }
 

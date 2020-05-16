@@ -32,6 +32,11 @@ const roomSeed = [
 	name: "LifeSupport",
 	visited: false,
 	power: false
+},{ 
+	name: "Cabin",
+	visited: false,
+	power: false,
+	treasure: false
 }
 
 ];
