@@ -18,7 +18,7 @@ const roomSeed = [
 }, {
 	name: "FlightDeck",
 	visited: false,
-	doorCode: 1701,
+	doorCode: "1701",
 	power: false
 }, {
 	name: "ComputerCore",

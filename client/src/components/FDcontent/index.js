@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button, Fade } from 'reactstrap';
-import { motion } from "framer-motion";
 import "./style.css"
 
 class Content extends Component {
@@ -22,6 +21,8 @@ class Content extends Component {
           Lights flicker as the a faint beeping indicates the systems are functioning on reserve power, yet none of the controls on the flight deck
           are how you remember. How you thought you remembered. You gaze out of the wide window. At least the stars are still there.
           But so is the damage from the phaser blasts. Fear starts creeping in as you remember why you are here again.
+          You try the door to exit, but when power is on reserve, the Flight Deck doors fail shut. You could manual override if you could just find the 
+          numerical input. You know you've seen it around here somewhere.
 
         {/* Nav Button */}
         {/* <button onClick={this.handleClick}>Click Me</button> */}
