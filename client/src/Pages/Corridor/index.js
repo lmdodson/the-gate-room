@@ -83,13 +83,40 @@ export default function VerticalTabs() {
         <Tab label="" {...a11yProps(3)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item One
+        <div className="nav-text">
+          <p>
+            Life Support. The unglamourous side of space travel. "Do I even know how these systems work?"
+          </p>
+        </div>
+        <div>
+          <Button className="danger">    
+            <Link to="/lifesupport"> Enter </Link>
+          </Button>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <div className="nav-text">
+          <p>
+            This room has to be important somehow. 
+          </p>
+        </div>
+        <div>
+          <Button className="danger">    
+            <Link to="/computercore"> Enter </Link>
+          </Button>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <div className="nav-text">
+          <p>
+            Something is off about the elevator. 
+          </p>
+        </div>
+        <div>
+          <Button className="danger">    
+            <Link to="/elevator"> Enter </Link>
+          </Button>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
         <div className="nav-text">

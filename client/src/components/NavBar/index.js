@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Portal from "../../assets/portal.png"
+import Portal from "../../assets/portal.png";
+import "./style.css";
 
 import {
   Collapse,
@@ -32,7 +33,7 @@ const NavBar = () => {
 
   return (
     <div className="nav-container">
-      <Navbar color="light" light expand="md">
+      <Navbar className="color-nav" expand="md">
         <Container>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
