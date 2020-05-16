@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import ReactTimeout from 'react-timeout'
+import VisibilityOutlinedIcon from '@material-ui/icons/VisibilityOutlined';
 
-import { Row, Col, Container } from "reactstrap"
+import { Row, Col, Container, Fade } from "reactstrap"
 import "./style.css"
  
 class Timeout extends Component {
@@ -19,11 +20,10 @@ class Timeout extends Component {
     this.change()
   }
   render () {
-      // <div style={{ backgroundColor: (this.state.on ? 'yellow' : 'gray') }}>
 // Intro
   return (
   <Container className="d-flex flex-column intro-text">
-    <div>
+      <div style={{ visibility: (this.state.on ? 'visible' : 'hidden')}}>
       {/* Start */}
       <Row>
         <Col md="auto">
@@ -32,7 +32,7 @@ class Timeout extends Component {
           </p>
         </Col>
       </Row>
-      <div style={{ color: (this.state.on ? 'red' : 'black')}}>
+      <div>
       <Row>
         <Col md="auto">
           <p>
@@ -43,7 +43,7 @@ class Timeout extends Component {
     </div>
 
   {/* 5 */}
-  <div style={{ color: (this.state.on ? 'red' : 'black')}}>
+  <div>
       <Row>
         <Col xs="1">
           <p className="guide">
@@ -142,6 +142,9 @@ class Timeout extends Component {
     <Row className="justify-content-center">.-.</Row>
     <Row className="justify-content-center">...</Row>
   </div>
+  <Row className="justify-content-end">
+  <VisibilityOutlinedIcon />
+  </Row>
   </Container>
   )
   }

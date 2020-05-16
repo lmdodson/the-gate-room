@@ -3,18 +3,24 @@
   margin-right: auto;
   margin-top: 2%;
   margin-bottom: 0;
+  /* background: black; */
   background: black;
-  border: ridge tan thick;
+  border: ridge blue thick;
   resize: both;
   overflow: auto;
+  /* color: rgb(41, 101, 212); */
+  color: silver;
 }
 .guide {
   font-weight: bolder;
+  visibility: visible;
+  color: aquamarine;
 }
 
 .thought {
   font-style: italic;
 }
-.one {
-  margin: auto;
+
+.cor-nav {
+  z-index: 1;
 }

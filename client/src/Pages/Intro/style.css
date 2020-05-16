@@ -1,7 +1,7 @@
 .intro-container {
   position: relative;
   color: black;
-  background: url(https://cdn.pixabay.com/photo/2017/02/08/21/44/fractal-2050167_1280.jpg) no-repeat;
+  background: url(https://cdn.pixabay.com/photo/2019/06/22/12/53/galaxy-4291517_1280.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -12,6 +12,15 @@
 
 
 .cor-nav {
-  margin-top: 50%;
-  z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    z-index: 1;
+}
+
+.eye {
+  color: white;
+  margin-bottom: 0;
 }

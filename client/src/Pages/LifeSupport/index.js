@@ -11,6 +11,9 @@ class LifeSupport extends Component {
     visited: false
   };
 
+componentDidMount = () => {
+  this.loadRoom();
+}
 
 // get DB data
 loadRoom = () => {

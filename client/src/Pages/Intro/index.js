@@ -10,17 +10,14 @@ const Intro = (props) => {
 return(
 // Intro
 <div className="d-flex flex-column h-100 intro-container">
-  <Container className="timeout-container">
-  {/* Pull in Timeout component */}
-      <div className="col-3 cor-nav one justify-content-center">
-        <Button>
+        <Button className="cor-nav">
         <Link to='/flightdeck'>Flight Deck</Link>
         </Button>
-      </div>
+  <Container className="timeout-container">
+  {/* Pull in Timeout component */}
   <Timeout />
         {/* Nav Button */}
   </Container>
-
 </div>
 )
 };
