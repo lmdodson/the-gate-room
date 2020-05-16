@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { Button, Row, Col, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./style.css"
+import "./style.css";
  
 const Exps = (props) => {
   // define props
@@ -29,7 +29,7 @@ const Exps = (props) => {
             Hello {user.nickname}
           </h2>
           <h4 className="my-5 text-center">
-            Check out the current stories. Click on a link to get started!
+            All of the stories offered on The Gate Room are interactive literary experiences. Puzzle elements are designed to enhance the story and your experience. Choose one of current offerings and click on the link to get started!
           </h4>
         </Col>
         {/* Carousel with stories and modal */}
@@ -38,7 +38,7 @@ const Exps = (props) => {
             <div>
               <img src="https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg" alt="swirling stars"/>
               <Button color='info' className={className} onClick={toggle}>{buttonLabel}</Button>
-            </div>
+            {/* </div> */}
               <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>Among The Stars</ModalHeader>
                 <ModalBody>
@@ -48,8 +48,13 @@ const Exps = (props) => {
                   <Link to="/ats" className="ats">Among the Stars</Link>
                 </ModalFooter>
               </Modal>
+              </div>
             <div>
               <img src="https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg" alt="chalkboard coming soon" />
+                <p className="legend">New Stories Coming Soon!</p>
+            </div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg" alt="chalkboard coming soon" />
                 <p className="legend">New Stories Coming Soon!</p>
             </div>
             <div>

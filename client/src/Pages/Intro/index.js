@@ -4,7 +4,7 @@ import "./style.css"
 import Timeout from "../../components/Timeout"
 import { Link } from 'react-router-dom';
 
-import { Button, Row, Container } from "reactstrap"
+import { Button, Container } from "reactstrap"
 
 const Intro = (props) => {
 return(

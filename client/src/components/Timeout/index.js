@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import ReactTimeout from 'react-timeout'
 import VisibilityOutlinedIcon from '@material-ui/icons/VisibilityOutlined';
 
-import { Row, Col, Container, Fade } from "reactstrap"
+import { Row, Col, Container } from "reactstrap"
 import "./style.css"
  
 class Timeout extends Component {
@@ -136,11 +136,11 @@ class Timeout extends Component {
 
 {/* Open */}
   <div>
-    <Row className="justify-content-center">...</Row>
+    <Row className="justify-content-center">.-..</Row>
+    <Row className="justify-content-center">..</Row>
+    <Row className="justify-content-center">..-.</Row>
     <Row className="justify-content-center">-</Row>
-    <Row className="justify-content-center">.-</Row>
-    <Row className="justify-content-center">.-.</Row>
-    <Row className="justify-content-center">...</Row>
+    <Row className="justify-content-center">OPEN</Row>
   </div>
   <Row className="justify-content-end">
   <VisibilityOutlinedIcon />

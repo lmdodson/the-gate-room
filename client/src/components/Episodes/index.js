@@ -2,7 +2,7 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Link } from 'react-router-dom';
 
-import {Row, Col, Button} from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import { Carousel } from 'react-responsive-carousel';
 import './style.css';
  
@@ -15,7 +15,7 @@ const Episodes = () => {
         <Col sm='6' className='descriptions'>
           <h2 className='my-5 text-center'>Among The Stars</h2>
           <h4 className='m-5 text-center'>
-            Check out the current stories. Click on a link to get started!
+            Good choice. Start your journey with Episode One: Arrival, or venture further into the story with later Episodes.
           </h4>
         </Col>
         {/* Carousel with episodes */}

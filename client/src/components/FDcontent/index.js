@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button, Fade } from 'reactstrap';
 import "./style.css"
 
 class Content extends Component {

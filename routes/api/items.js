@@ -3,7 +3,7 @@ const router = require("express").Router();
 const itemsController = require("../../controllers/items-controller.js");
 
 // Matches with "/api/items"
-router.route("/")
+router.route("/all")
 .get(itemsController.findAll)
 .post(itemsController.create);
 

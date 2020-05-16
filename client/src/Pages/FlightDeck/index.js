@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../../Utils/API";
 import { Link } from "react-router-dom";
-import { Row, Container, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Row, Container } from 'reactstrap';
 import Content from "../../components/FDcontent";
 import FDcard from "../../components/FDcard";
 import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
@@ -34,10 +34,9 @@ loadRoom = () => {
     // update the state based on db values
     this.setState({
       id: res.data[0]._id,
-      visited: true,
+      visited: false,
       keycode: res.data[0].doorCode
     }) 
-    // console.log(res.data[0].doorCode, res.data[0]._id)
     )
     .catch((err) => console.log(err));
 };
@@ -72,7 +71,7 @@ handleInputChange = (event) => {
 handleFormSubmit = event => {
   // Preventing the default behavior of the form submit (which is to refresh the page)
   event.preventDefault();
-  if (this.state.keyattempt == "1701"){
+  if (this.state.keyattempt === "1701"){
   // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
   // alert(`Hello ${this.state.keyattempt}`);
   this.setState({passed: true})
@@ -80,7 +79,7 @@ handleFormSubmit = event => {
 };
 
   render() {
-    if (this.state.visited==false) {
+    if (this.state.visited===false) {
     return(
       <div style={{ background: (this.state.on ? 'url(https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg)'
         : 'black') }} className='d-lg-flex fd-container h-100 justify-content-center'>
