@@ -105,7 +105,7 @@ handleFormSubmit = event => {
             name="keyattempt"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="First Name"
+            placeholder="Awaiting Code...."
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
