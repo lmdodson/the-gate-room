@@ -14,7 +14,7 @@ router.route("/:id")
 	.delete(itemsController.remove);
 
 	// Matches with "/api/items/:name"
-router.route("/find-item/:name")
+router.route("/reveal/:name")
 	.get(itemsController.find)
 
 // Exporting

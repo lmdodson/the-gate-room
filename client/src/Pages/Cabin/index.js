@@ -9,7 +9,8 @@ class Cabin extends Component {
     id: 0,
     power: false,
     visited: false,
-    treasure: false
+    treasure: false,
+    treasureID: 0
   };
 
   componentDidMount = () => {
@@ -44,6 +45,7 @@ updateRoom = () => {
 }
 
 
+
 // get DB data
 takeItem = () => {
   // save the db item
@@ -51,6 +53,30 @@ takeItem = () => {
     name: 'key',
     type: 'treasure'
   })
+  .then((res) =>
+  // update the state 
+  this.setState({
+    treasure: true
+  })
+  // console.log(res)
+  )
+  .catch((err) => console.log(err));
+};
+
+// find the db item
+findItem = () => {
+  API.getItem('key')
+  .then((res) => 
+  this.setState({
+    treasureID: res.data._id
+  })
+  )
+  .catch((err) => console.log(err))
+}
+// get DB data
+useItem = () => {
+  // save the db item
+  API.deleteItem(this.state.treasureID)
     .then((res) =>
     // update the state 
       this.setState({
@@ -61,12 +87,15 @@ takeItem = () => {
     .catch((err) => console.log(err));
 };
 
+
   render() {
     return(
       <div>
         <h1>{this.state.currentPage}</h1> 
          <div>You see an old metal <span onClick={this.takeItem} style={{color: 'red'}}>key</span> on the table in front of you. What could it unlock?</div>
-         
+         <div>A wodden box is shoved into a dusty corner. </div>
+         <div>You're sure you put a <span onClick={this.findItem} style={{color: 'red'}}>key</span> somewhere. </div>
+          <div>The key seems to fit. You <span onClick={this.useItem} style={{color: 'red'}}>unlock</span> the box.</div>
       <Link to='/corridor'>Corridor</Link>
       </div>
       )
