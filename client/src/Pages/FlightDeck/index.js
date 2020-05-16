@@ -25,11 +25,10 @@ roomStats = (data) => {
 // get DB data
 loadRoom = () => {
   // gets the db items
-  API.getRoom(this.state.currentPage)
+  API.getRoom("FlightDeck")
     .then((res) =>
     this.roomStats(res)
     // run the select items function and pass the db response
-      // console.log(res.data)
     )
     .catch((err) => console.log(err));
 };
